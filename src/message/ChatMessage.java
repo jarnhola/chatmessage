@@ -6,7 +6,6 @@
 package message;
 
 import java.io.Serializable;
-import javafx.scene.paint.Color;
 
 /**
  * This class can be used as serializable object between the client and 
@@ -19,7 +18,7 @@ public class ChatMessage implements Serializable{
     private String userName;
     private String chatMessage;
     private String messageColor;
-    private int fontSize;
+    private double fontSize;
     private boolean isPrivate;
     private String privateName;
 
@@ -47,11 +46,11 @@ public class ChatMessage implements Serializable{
         this.messageColor = messageColor;
     }
 
-    public int getFontSize() {
+    public double getFontSize() {
         return fontSize;
     }
 
-    public void setFontSize(int fontSize) {
+    public void setFontSize(double fontSize) {
         this.fontSize = fontSize;
     }
 
